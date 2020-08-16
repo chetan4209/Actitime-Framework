@@ -7,12 +7,12 @@ import org.qsp.genericmethod.BaseTest;
 import org.qsp.genericmethod.XL;
 import org.qsp.pom.LoginPage;
 import org.qsp.pom.ReportPage;
-import org.qsp.pom.TC_14;
+import org.qsp.pom.TC_15;
 import org.testng.annotations.Test;
 
-public class TestTC_14 extends BaseTest {
+public class TestTC_15 extends BaseTest{
 	@Test
-	public void TC14() throws Exception, InvalidFormatException, InterruptedException, IOException {
+	public void TC15() throws Exception, InvalidFormatException, InterruptedException, IOException {
 		String un = XL.getdata(XL_PATH, SHEET_NAME, 1, 0);
 		String pw = XL.getdata(XL_PATH, SHEET_NAME, 1, 1);
 		//String title = XL.getdata(XL_PATH, SHEET_NAME, 1, 2);
@@ -26,13 +26,13 @@ public class TestTC_14 extends BaseTest {
 		ReportPage rp= new ReportPage(driver);
 		rp.timetrack();
 		
-		TC_14 tc14= new TC_14(driver);
-		tc14.TaskClick();
-		tc14.AssUserClick();
-		tc14.AssignClick();
-		tc14.UserNameClick();
-		Thread.sleep(3000);
-		tc14.Scrollup(driver);
-		tc14.Scrollupclick(driver);
-		Thread.sleep(3000);
+		TC_15 tc15= new TC_15(driver);
+		tc15.TaskClick();
+		tc15.mouseOver(driver);
+		tc15.ManagerClick();
+		tc15.AddMgrClick();
+		tc15.UserNameClick();
+		tc15.Scrollup(driver);
+		tc15.Scrollupclick(driver);
+
 }}
