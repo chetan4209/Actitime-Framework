@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class TC_14 {
 	@FindBy(xpath="//div[contains(@class,'task')][contains(text(),'NASA negotiations')]")
 	private WebElement Task;
-	@FindBy(xpath="//span[contains(text(),'ASSIGNED USERS (10)')]")
+	@FindBy(xpath="//div[@class='assignedUsers']")
 	private WebElement AssUser;
 	@FindBy(xpath="//div[contains(@class,'assignUserButton components_button withPlusIcon')][contains(text(),'Assign')]")
 	private WebElement Assign;

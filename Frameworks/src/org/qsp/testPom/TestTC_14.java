@@ -28,6 +28,7 @@ public class TestTC_14 extends BaseTest {
 		
 		TC_14 tc14= new TC_14(driver);
 		tc14.TaskClick();
+		Thread.sleep(3000);
 		tc14.AssUserClick();
 		tc14.AssignClick();
 		tc14.UserNameClick();
