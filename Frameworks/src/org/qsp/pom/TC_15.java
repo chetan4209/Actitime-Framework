@@ -3,14 +3,13 @@ package org.qsp.pom;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class TC_15 {
 	@FindBy(xpath="//div[contains(@class,'task')][contains(text(),'NASA negotiations')]")
 	private WebElement Task;
-	@FindBy(xpath="//span[contains(text(),'MANAGERS (8)')]")
+	@FindBy(xpath="//div[@class='managers']")
 	private WebElement Manager;
 	@FindBy(xpath="//div[contains(text(),'Add Managers')]")
 	private WebElement AddMgr;
@@ -24,10 +23,6 @@ public class TC_15 {
 	}
 	public void TaskClick() {
 		Task.click();
-	}
-	public void mouseOver(WebDriver driver) {
-		Actions a = new Actions(driver);
-		a.moveToElement(Manager).build().perform();
 	}
 	public void ManagerClick() {
 		Manager.click();

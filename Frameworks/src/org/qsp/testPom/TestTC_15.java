@@ -28,7 +28,7 @@ public class TestTC_15 extends BaseTest{
 		
 		TC_15 tc15= new TC_15(driver);
 		tc15.TaskClick();
-		tc15.mouseOver(driver);
+		Thread.sleep(3000);
 		tc15.ManagerClick();
 		tc15.AddMgrClick();
 		tc15.UserNameClick();
