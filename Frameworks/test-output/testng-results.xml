@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[ Test TC20 is passed ]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="37871" started-at="2020-08-15T13:23:38 IST" finished-at="2020-08-15T13:24:16 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="37871" started-at="2020-08-15T13:23:38 IST" finished-at="2020-08-15T13:24:16 IST">
+      <class name="org.qsp.testPom.TestTC_20">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:org.qsp.testPom.TestTC_20@3224f60b]" name="openApp" is-config="true" duration-ms="17356" started-at="2020-08-15T13:23:38 IST" finished-at="2020-08-15T13:23:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="TC20()[pri:0, instance:org.qsp.testPom.TestTC_20@3224f60b]" name="TC20" duration-ms="16308" started-at="2020-08-15T13:23:55 IST" finished-at="2020-08-15T13:24:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC20 -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:org.qsp.testPom.TestTC_20@3224f60b]" name="closeApp" is-config="true" duration-ms="4153" started-at="2020-08-15T13:24:11 IST" finished-at="2020-08-15T13:24:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC20 status=SUCCESS method=TestTC_20.TC20()[pri:0, instance:org.qsp.testPom.TestTC_20@3224f60b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[ Test TC20 is passed ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- org.qsp.testPom.TestTC_20 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
